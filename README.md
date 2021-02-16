@@ -16,7 +16,7 @@ Application Link &nbsp;-&nbsp; [movieXplore](https://moviexplore.herokuapp.com/)
         <li><a href="#Working">Working Explained</a></li>
         <li><a href="#Functions Dependency">Functions Description</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#run">Run Locally</a></li>
+        <li><a href="#Run">Run Locally</a></li>
         <li><a href="#heroku deployement">Heroku Deployement</a></li>
         <li><a href="#todo">To Do</a></li>
         <li><a href="#technologies">Technologies Used</a></li>
