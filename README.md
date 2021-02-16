@@ -13,8 +13,8 @@ Application Link &nbsp;-&nbsp; [movieXplore](https://moviexplore.herokuapp.com/)
 <div style="margin-top: 10px">
     <ol>
         <li><a href="#overview">Overview</a></li>
-        <li><a href="#Working">Overview</a></li>
-        <li><a href="#Functions Dependency">Overview</a></li>
+        <li><a href="#Working">Working Explained</a></li>
+        <li><a href="#Functions Dependency">Functions Description</a></li>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#run">Run Locally</a></li>
         <li><a href="#heroku deployement">Heroku Deployement</a></li>
