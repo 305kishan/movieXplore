@@ -36,7 +36,7 @@ This code can run on any ```Python 3``` version. If you want to run this on your
 
 
 ## Run 
-On your local machine, run <b> [FIFA20.py](https://github.com/305kishan/movieXplore/blob/main/movieXplore.py) </b> in your command prompt and then use the the IP address to access the Url
+On your local machine, run <b> [movieXplore.py](https://github.com/305kishan/movieXplore/blob/main/movieXplore.py) </b> in your command prompt and then use the the IP address to access the Url
 
 
 
