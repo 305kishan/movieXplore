@@ -27,14 +27,15 @@ Application Link &nbsp;-&nbsp; [movieXplore](https://moviexplore.herokuapp.com/)
 
 
 ## Overview
-This Python Application Displays various statistics of Club or Country with the Help of Textual and Graphical Data.
+This Application displays details of a title or compares two titles depending upon what users want to perform.
 
 
 ## Working
 This Application performs 4 types of operations.
 1. Movies
     1. Analyse a Movie
-    2. Compare Two Movies
+        1. hi
+    3. Compare Two Movies
 2. Series
     1. Analyse a Series
     2. Compare Two Series
