@@ -30,6 +30,17 @@ Application Link &nbsp;-&nbsp; [movieXplore](https://moviexplore.herokuapp.com/)
 This Python Application Displays various statistics of Club or Country with the Help of Textual and Graphical Data.
 
 
+## Working
+This Application performs 4 types of operations.
+1. Movies
+    1. Analyse a Movie
+    2. Compare Two Movies
+2. Series
+    1. Analyse a Series
+    2. Compare Two Series
+
+
+
 ## Installation 
 This code can run on any ```Python 3``` version. If you want to run this on your local machine but don't have Python, please install Python 3 first. To install required packages and library, run this command in project directory after cloning the the repository.<br>
 ```pip install -r requirements.txt```
