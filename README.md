@@ -35,7 +35,7 @@ This Application performs 4 types of operations.
 1. Movies
     1. Analyse a Movie
        <br> ![Movie_Analyse](https://i.ibb.co/HTxLcc0/image.png)
-       <br> ![Movie_Analyse](https://i.ibb.co/yShCWWY/image.png)
+       <br> ![Movie_Analyse](https://i.ibb.co/B64YFTD/image.png)
     3. Compare Two Movies
 2. Series
     1. Analyse a Series
@@ -49,6 +49,7 @@ This code can run on any ```Python 3``` version. If you want to run this on your
 
 ## Run 
 On your local machine, run <b> [movieXplore.py](https://github.com/305kishan/movieXplore/blob/main/movieXplore.py) </b> in your command prompt and then use the the IP address to access the Url
+
 
 
 ## Heroku Deployement
