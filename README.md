@@ -32,14 +32,14 @@ This Application displays details of a title or compares two titles depending up
 
 ## Working
 This Application performs 4 types of operations.
-1. Movies
-    1. Analyse a Movie
+1. <b>Movies</b>
+    1. <i>Analyse a Movie</i>
     <br> ![Movie_Analyse](https://i.ibb.co/HTxLcc0/image.png)
     <br> ![Movie_Analyse](https://i.ibb.co/B64YFTD/image.png)
-    3. Compare Two Movies
+    3. <i>Compare Two Movies</i>
 2. <b> Series </b>
-    1. Analyse a Series
-    2. Compare Two Series
+    1. <i>Analyse a Series</i>
+    2. <i>Compare Two Series</i>
     <br> ![Series](https://i.ibb.co/s9ZFd9Z/image.png)
     <br> ![Series](https://i.ibb.co/Q90Vj1Q/image.png)
     <br> ![Series](https://i.ibb.co/b1qkBGy/image.png)
