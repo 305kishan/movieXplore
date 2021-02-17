@@ -35,6 +35,7 @@ This Application performs 4 types of operations.
 1. Movies
     1. Analyse a Movie
        <br> ![Movie_Analyse](https://i.ibb.co/HTxLcc0/image.png)
+       <br> ![Movie_Analyse](https://i.ibb.co/yShCWWY/image.png)
     3. Compare Two Movies
 2. Series
     1. Analyse a Series
