@@ -34,7 +34,7 @@ This Application displays details of a title or compares two titles depending up
 This Application performs 4 types of operations.
 1. Movies
     1. Analyse a Movie
-       <br> ```hidfjih```
+       <br> 
     3. Compare Two Movies
 2. Series
     1. Analyse a Series
