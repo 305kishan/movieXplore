@@ -4,6 +4,7 @@
 ---
 [![forthebadge](https://forthebadge.com/images/badges/made-with-crayons.svg)](https://www.linkedin.com/in/305kishan/)
 <br>
+
 ---
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://moviexplore.herokuapp.com/)<br>
 Application Link &nbsp;-&nbsp; [movieXplore](https://moviexplore.herokuapp.com/)
@@ -25,7 +26,6 @@ Application Link &nbsp;-&nbsp; [movieXplore](https://moviexplore.herokuapp.com/)
 <br>
 
 
-
 ## Overview
 This Python Application Displays various statistics of Club or Country with the Help of Textual and Graphical Data.
 
@@ -40,7 +40,6 @@ This Application performs 4 types of operations.
     2. Compare Two Series
 
 
-
 ## Installation 
 This code can run on any ```Python 3``` version. If you want to run this on your local machine but don't have Python, please install Python 3 first. To install required packages and library, run this command in project directory after cloning the the repository.<br>
 ```pip install -r requirements.txt```
@@ -50,7 +49,6 @@ This code can run on any ```Python 3``` version. If you want to run this on your
 On your local machine, run <b> [movieXplore.py](https://github.com/305kishan/movieXplore/blob/main/movieXplore.py) </b> in your command prompt and then use the the IP address to access the Url
 
 
-
 ## Heroku Deployement
 Create a new app in [Heroku](https://www.heroku.com/) and link the [Github Repository](https://github.com/305kishan/movieXplore). </div>
 
@@ -58,5 +56,3 @@ Create a new app in [Heroku](https://www.heroku.com/) and link the [Github Repos
 ## To Do
 <li>Improve Algorithm used for showing related T Series. </li>
 <li>Reduce Code Length. </li> </div>
-
-           
