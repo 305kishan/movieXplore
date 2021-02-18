@@ -1,4 +1,4 @@
-# Importing Libraries
+#Importing Libraries
 import streamlit as st #for creating UI
 import pandas as pd #for converting data into DataFrames
 pd.set_option('display.max_colwidth', -1)
@@ -177,7 +177,7 @@ def similarMovies(inputMovie):
     return similarList
     
 
-# Function to compare two movies
+#Function to compare two movies
 def compareTwoMovies():
     mlist = twoMovieinput()
     try:
@@ -274,7 +274,7 @@ def compareTwoMovies():
     except:
         pass
 
-
+# Function will be invoked when user selects MOVIES
 def movies():
     activities = ['Analyse a Movie', 'Compare Two Movies'] # CHOOSE EITHER ONE
     choice = st.selectbox("Analyse or Compare", activities)
@@ -350,7 +350,7 @@ def similarSeries(inputSeries):
     similarList = df['Name'].to_list()
     return similarList
 
-
+#To compare two series
 def compareTwoSeries():
     mlist = twoSeriesinput()
     try:
@@ -447,7 +447,7 @@ def compareTwoSeries():
     except:
         pass
 
-
+#It will be invoked when user selects SERIES
 def series():
     activities = ['Analyse a Series', 'Compare Two Series'] # CHOOSE EITHER ONE
     choice = st.selectbox("Analyse or Compare", activities)
@@ -459,7 +459,7 @@ def series():
         compareTwoSeries()
 
 
-
+#Function to implement sidebar navigation form
 def sidebarfunction(): #CREATING A BAR NAVIGATION FORM
     st.sidebar.markdown("<hr>", unsafe_allow_html=True)
     link1 = '[movieXplore Repository](https://github.com/305kishan/movieXplore)'
@@ -477,7 +477,7 @@ def sidebarfunction(): #CREATING A BAR NAVIGATION FORM
     st.sidebar.markdown("<hr>", unsafe_allow_html=True)
 
 
-
+# Main Function
 def main():
     
     st.title("movieXplore")
