@@ -12,6 +12,9 @@ import requests
 import matplotlib.pyplot as plt
 plt.style.use("ggplot")
 
+#To set webapp name and Icon
+st.set_page_config(page_title='movieXplore', page_icon='🎬', layout='centered', initial_sidebar_state='auto')
+
 #Piece of code to hide streamlit menu and footer icon
 hide_streamlit_style = """
             <style>
