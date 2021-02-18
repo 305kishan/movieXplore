@@ -1,14 +1,18 @@
-import streamlit as st
-import pandas as pd
+# Importing Libraries
+import streamlit as st #for creating UI
+import pandas as pd #for converting data into DataFrames
 pd.set_option('display.max_colwidth', -1)
 
+#Below libraries to process our request and convert data into readable format
 import urllib.request, urllib.parse, urllib.error
 import json
 import requests
 
+#Plotting Library
 import matplotlib.pyplot as plt
 plt.style.use("ggplot")
 
+#Piece of code to hide streamlit menu and footer icon
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -17,7 +21,7 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-
+#This code sets the background of our web app
 page_bg_img = '''
 <style>
 body {
@@ -28,7 +32,7 @@ background-size: cover;
 '''
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-
+#This function generates the URL for our input 'title' and process it.
 def urlGenerator(title):
     serviceUrl = 'http://www.omdbapi.com/?'
     apiKey='&apikey=7180e7d8'
@@ -36,7 +40,8 @@ def urlGenerator(title):
     inputInfo = urllib.request.urlopen(url)
     return inputInfo
     
-
+# Using return from above function, this function generates two DataFrames for our request.
+# One corresponding to movie_details and other to rating_details
 def movieDataGenerator(inputInfo):
     data = inputInfo.read()
     json_data = json.loads(data)
@@ -46,6 +51,8 @@ def movieDataGenerator(inputInfo):
     return movieDf,ratingDf
 
 
+# Using return from above function, this function generates two DataFrames for our request.
+# One corresponding to series_details and other to rating_details
 def seriesDataGenerator(inputInfo):
     data = inputInfo.read()
     json_data = json.loads(data)
@@ -55,7 +62,8 @@ def seriesDataGenerator(inputInfo):
     return seriesDf,ratingDf
     
 
-
+            
+#Function to take movie name from user on front end using streamlit
 def movieInput():
     title = st.text_input("Enter movie Name",'Titanic')
     inputInfo = urlGenerator(title)
@@ -67,7 +75,7 @@ def movieInput():
             st.text("This input currently Can't be processed, try some other movies")
             
 
- 
+#Function to take series name from user on front end using streamlit
 def seriesInput():
     title = st.text_input("Enter A Series Name","The Office")
     inputInfo = urlGenerator(title)
@@ -78,6 +86,8 @@ def seriesInput():
         except:
             st.text("This input currently Can't be processed, try some other movies")
 
+ 
+#This function will invoke when user selects to compare two MOVIES
 def twoMovieinput():
     st.text("Enter Two Movies for Comparision")
     d = []
@@ -88,7 +98,8 @@ def twoMovieinput():
     if st.button("Compare"):
         e = d
         return e
-    
+ 
+#This function will invoke when user selects to compare two MOVIES
 def twoSeriesinput():
     st.text("Enter Two Series for Comparision")
     d = []
@@ -100,7 +111,7 @@ def twoSeriesinput():
         e = d
         return e
 
-
+#Function to show the details of a movie
 def movieAnalysis():
     try:
         movieDf,ratingDf = movieInput()
@@ -146,7 +157,7 @@ def movieAnalysis():
     
 
 
-
+#This function will get similar movie list from TASTE_DIVE
 def get_movies_from_tastedive(input_title):
     base_url = 'https://tastedive.com/api/similar'
     param_d = {}
@@ -157,6 +168,7 @@ def get_movies_from_tastedive(input_title):
     response_d=response.json()
     return response_d
 
+#This function gets data from above function and cleans it and converts it to a DataFrame.
 def similarMovies(inputMovie):
     a = get_movies_from_tastedive(inputMovie)
     a = a['Similar']['Results']
@@ -165,7 +177,7 @@ def similarMovies(inputMovie):
     return similarList
     
 
-
+# Function to compare two movies
 def compareTwoMovies():
     mlist = twoMovieinput()
     try:
@@ -274,7 +286,7 @@ def movies():
         compareTwoMovies()
 
 
-        
+#Function to show the details of a series.        
 def seriesAnalysis():
     try:
         seriesDf,ratingDf = seriesInput()
@@ -319,7 +331,7 @@ def seriesAnalysis():
     except:
         pass
 
-
+#This function will get similar series list from TASTE_DIVE
 def get_series_from_tastedive(input_title):
     base_url = 'https://tastedive.com/api/similar'
     param_d = {}
@@ -330,6 +342,7 @@ def get_series_from_tastedive(input_title):
     response_d=response.json()
     return response_d
 
+#This function gets data from above function and cleans it and converts it to a DataFrame.
 def similarSeries(inputSeries):
     a = get_series_from_tastedive(inputSeries)
     a = a['Similar']['Results']
